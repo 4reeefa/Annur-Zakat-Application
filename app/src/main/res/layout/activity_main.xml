@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/purple_light"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dip"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/Letscalculate"
+        android:textColor="#622569"
+        android:textSize="20sp" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/heading1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/heading"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:text="@string/yourzakat"-->
+<!--        android:textColor="#ff008d"-->
+<!--        android:textSize="16sp" />-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical">-->
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/group"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/weight"
+        android:inputType="numberDecimal"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dip"
+        android:layout_marginTop="15dp"
+        android:text="@string/type"
+        android:textColor="#050505"
+        android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="16dip"
+            android:layout_marginRight="16dip"
+            android:layout_below="@id/type"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/keep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="16dip"
+                android:layout_marginTop="2dip"
+                android:layout_marginRight="16dip"
+                android:minHeight="4dp"
+                android:padding="5dp"
+                android:text="@string/keep"
+                android:textColor="#0C0C0C"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/wear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="16dip"
+                android:layout_marginTop="2dip"
+                android:layout_marginRight="16dip"
+                android:minHeight="4dp"
+                android:padding="5dp"
+                android:text="@string/wear"
+                android:textColor="#0B0909"
+                android:textSize="16sp" />
+
+        </RadioGroup>
+
+    <EditText
+        android:id="@+id/currentgold"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/weight"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dip"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dip"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/current_gold"
+        android:inputType="numberDecimal"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/currentgold"
+        android:layout_marginLeft="16dip"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dip"
+        android:background="@color/purple_bold"
+        android:text="@string/calculate"
+        android:textSize="16sp" />
+
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/totalGold"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/button"-->
+<!--        android:layout_marginLeft="16dip"-->
+<!--        android:layout_marginTop="16dip"-->
+<!--        android:layout_marginRight="16dip"-->
+<!--        android:includeFontPadding="true"-->
+<!--        android:text="@string/totalGold"-->
+<!--        android:textColor="#000000"-->
+<!--        android:textSize="16sp"-->
+<!--        android:textStyle="bold" />-->
+<!---->
+<!--    <TextView-->
+<!--        android:id="@+id/zakatPayable"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="16dip"-->
+<!--        android:layout_marginTop="5dip"-->
+<!--        android:layout_marginRight="16dip"-->
+<!--        android:includeFontPadding="true"-->
+<!--        android:text="@string/zakatPay"-->
+<!--        android:textColor="#000000"-->
+<!--        android:textSize="16sp"-->
+<!--        android:textStyle="bold" />-->
+
+    <!--        android:layout_below="@id/totalGold"-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/totalZakat"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/zakatPayable"-->
+<!--        android:layout_marginLeft="16dip"-->
+<!--        android:layout_marginTop="5dip"-->
+<!--        android:layout_marginRight="16dip"-->
+<!--        android:includeFontPadding="true"-->
+<!--        android:text="@string/totalZakat"-->
+<!--        android:textColor="#000000"-->
+<!--        android:textSize="16sp"-->
+<!--        android:textStyle="bold" />-->
+
+    <EditText
+        android:id="@+id/totalGoldAns"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/totalGold"
+        android:inputType="numberDecimal"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/zakatPayableAns"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/totalGoldAns"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="@string/zakatPay"
+        android:textSize="16sp"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/totalZakatAns"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/zakatPayableAns"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="@string/totalZakat"
+        android:textSize="16sp"
+        android:gravity="center" />
+
+    <!--    </LinearLayout>-->
+
+</RelativeLayout>
+

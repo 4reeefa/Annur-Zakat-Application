@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Annur Zakat Application</string>
+    <string name="izzah">Wan Nurul Izzah Binti Abd Hadi</string>
+    <string name="izzahId">2021125795</string>
+    <string name="izzahClass">RCS2515A</string>
+    <string name="arifa">Nur Arifa Najiha Binti Ahmad Zawawi</string>
+    <string name="arifaId">2021156173</string>
+    <string name="arifaClass">RCS2515A</string>
+    <string name="copyright">Copyright &#169; 2022 Arifa and Izzah</string>
+    <string name="Letscalculate">Calculate Your Gold Zakat Now!</string>
+    <string name="yourzakat">your zakat now!</string>
+    <string name="weight">Enter Gold Weight (g)</string>
+    <string name="type">Type of Gold: </string>
+    <string name="keep">Keep</string>
+    <string name="wear">Wear</string>
+    <string name="current_gold">Enter Current Gold Value (RM/g)</string>
+    <string name="totalGold">Total Value of Gold :</string>
+    <string name="zakatPay">Total Zakat Payable :</string>
+    <string name="totalZakat">Total Zakat :</string>
+    <string name="calculate">calculate</string>
+    <string name="about_text">Annur Zakat Application is an application that helps you to calculate how much zakat gold you have to pay. Try it now!</string>
+    <string name="people">People behind this app</string>
+    <string name="hyperlink">Visit our website! <a href = "https://4reeefa.github.io/Annur-Zakat-Apps/">annurzakatapps.com</a></string>
+
+</resources>
