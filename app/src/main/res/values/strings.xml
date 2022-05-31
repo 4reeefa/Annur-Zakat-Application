@@ -20,6 +20,6 @@
     <string name="calculate">calculate</string>
     <string name="about_text">Annur Zakat Application is an application that helps you to calculate how much zakat gold you have to pay. Try it now!</string>
     <string name="people">People behind this app</string>
-    <string name="hyperlink">Visit our website! <a href = "https://4reeefa.github.io/Annur-Zakat-Apps/">annurzakatapps.com</a></string>
+    <string name="hyperlink">Visit our website! <a href = "https://github.com/4reeefa/Annur-Zakat-Application">annurzakatapps.com</a></string>
 
 </resources>

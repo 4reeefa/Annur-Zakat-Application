@@ -26,8 +26,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     EditText weight, currentgold, totalGold, zakatPayable, totalZakat;
     Button button;
-//    TextView zakatPayable,totalZakat;
-//    TextView totalGold,zakatPayable,totalZakat;
 
     Float weights, currValue;
 
@@ -42,9 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         weight = (EditText) findViewById(R.id.weight);
         currentgold= (EditText) findViewById(R.id.currentgold);
-        //btnSave = (Button) findViewById(R.id.button);
         button = (Button) findViewById(R.id.button);
-        //totalGold = (TextView) findViewById((R.id.totalGold));
         totalGold = (EditText) findViewById((R.id.totalGoldAns));
         zakatPayable = (EditText) findViewById((R.id.zakatPayableAns));
         totalZakat = (EditText) findViewById((R.id.totalZakatAns));
@@ -101,10 +97,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 case R.id.button:
 
                     try {
-                        //double wght, value;
-//                        wght = Double.parseDouble(weight.getText().toString());
-//                        value = Double.parseDouble(currentgold.getText().toString());
-
                         float wght, value;
                         wght = Float.parseFloat(weight.getText().toString());
                         value = Float.parseFloat(currentgold.getText().toString());
@@ -120,7 +112,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                         double totalValueGold = wght * value;
                         String totalValueGoldCur = new Double(totalValueGold).toString();
-//                        totalGold.setText("Total value of the gold: RM "+totalValueGold); //for output total value of the gold
                         totalGold.setText("Total value of the gold: RM " + (numberCurrencyFormat(totalValueGoldCur)));
 
 
@@ -140,11 +131,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                         if (zktPayable >= 0) {
                             String zakatPayableCur = new Double(zktPayable).toString();
-                            //zakatPayable.setText("Total Zakat Payable: RM "+zktPayable); //calculation for output zakat payable
                             zakatPayable.setText("Total Zakat Payable: RM " + (numberCurrencyFormat(zakatPayableCur)));
                             double totalZkt = zktPayable * 0.025;
                             String totalZktCur = new Double(totalZkt).toString();
-                            //totalZakat.setText("Total Zakat: RM "+totalZkt);  //calculation for output total zakat
                             totalZakat.setText("Total Zakat: RM " + (numberCurrencyFormat(totalZktCur)));
 
                         } else {
